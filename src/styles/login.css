@@ -1,0 +1,13 @@
+.form-control:focus {
+  box-shadow: none;
+}
+.input-border {
+  border: 1px solid var(--border-color);
+}
+.login-icons {
+  cursor: pointer;
+  margin-right: 16px;
+}
+.text {
+  color: var(--secondary-color);
+}

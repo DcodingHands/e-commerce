@@ -1,0 +1,11 @@
+footer {
+  background-color: var(--dark-color);
+  font-size: 16px;
+}
+footer:not(:first-child) {
+  border-top: 1px solid var(--border-color);
+}
+.footer-icons {
+  margin-right: 5px;
+  color: red;
+}

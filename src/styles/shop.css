@@ -1,0 +1,35 @@
+.card-body ul li {
+  cursor: pointer;
+}
+.form-check .from-check-input:focus {
+  display: none;
+}
+
+.form-check input[type="checkbox"] {
+  background-color: var(--primary-color) !important;
+}
+.form-check .form-check-label {
+  font-size: 14px;
+}
+.colors li {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid var(--primary-color);
+}
+
+.filter-sort-grid {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+.grid .icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: var(--primary-light-color);
+  padding: 5px;
+  border-radius: 10px;
+}

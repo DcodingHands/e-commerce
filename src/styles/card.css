@@ -1,0 +1,40 @@
+.my-grid-12 {
+  width: 100%;
+}
+.my-grid-6 {
+  width: 49%;
+}
+.my-grid-4 {
+  width: 32%;
+}
+
+.card .card-image {
+  width: 100%;
+  height: 100px;
+  max-height: 100px;
+  cursor: pointer;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+.card-btn button {
+  position: relative;
+  border: 2px solid transparent;
+  height: 40px;
+  padding: 0 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 40px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  display: block;
+  margin: auto;
+}
+
+.card-btn button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}

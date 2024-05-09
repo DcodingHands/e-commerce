@@ -1,0 +1,35 @@
+.card-image img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-content {
+  padding: 15px;
+}
+.blog-content .date {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: var(--light-text-color);
+}
+.blog-content .name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--dark-color);
+}
+.blog-content .desc {
+  font-size: 16px;
+  line-height: 24px;
+}
+.blog-content a {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: 500;
+}

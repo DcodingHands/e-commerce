@@ -1,0 +1,214 @@
+.page-title {
+  margin-bottom: 2em;
+}
+.form-cart {
+  width: 100%;
+}
+.item {
+  display: flex;
+  position: relative;
+  /* background-color: #bf06f7; */
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+table :where(th, td):first-child {
+  padding-left: 2em;
+  text-align: left;
+  /* background-color: aqua; */
+}
+table thead th {
+  vertical-align: middle;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+table :where(th, td) {
+  padding: 2em 1em;
+  text-align: center;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+table tbody td:first-child {
+  padding-left: 0;
+}
+
+.qty-control :where(button, input) {
+  width: 32px;
+  height: 32px;
+  padding: 0.25em;
+  text-align: center;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+.qty-control button {
+  cursor: pointer;
+}
+table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+}
+.flex-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.thumbnail {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  margin-right: 1em;
+}
+table td :where(.content, .qty-control, p) {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+form p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.qty-control {
+  width: fit-content;
+  padding: 0.5;
+  border: 1px solid var(--border-color);
+  margin: auto;
+}
+.qty-control :where(button, input) {
+  width: 32px;
+  height: 32px;
+  padding: 0.25em;
+  text-align: center;
+  outline: 0;
+  border: 0;
+  /* background-color: red; */
+}
+.item {
+  flex-direction: column;
+}
+
+.cart-summary .item {
+  background-color: var(--light-bg-color);
+}
+.cart-summary .coupon {
+  position: relative;
+}
+.cart-summary .coupon input {
+  font-size: 1.1em;
+  outline: 0;
+  width: var(--percent100);
+  padding: 0 1.5em;
+  height: 50px;
+  background-color: var(--white-color);
+  border: 2px solid var(--dark-color);
+}
+.cart-summary .coupon button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  font-size: 1em;
+  padding: 0 2.5em;
+  height: 50px;
+  cursor: pointer;
+}
+.cart-summary .shipping-rate {
+  padding: 0 2em 0 1em;
+}
+.cart-summary .shipping-rate .has-drop-down > a {
+  font-size: 1em;
+  margin: 2em 0;
+  border: 0;
+}
+.cart-summary .content form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.styled :where(input, select, textarea) {
+  padding: 0.75em;
+  outline: 0;
+  background-color: var(--white-color);
+  border-width: 0 0 3px 0;
+  border-style: solid;
+  border-color: var(--border-color);
+}
+.cart-total table tr > * {
+  padding: 0;
+}
+.cart-total table td {
+  text-align: right;
+}
+.cart-summary .cart-total {
+  padding: 2em;
+  background-color: var(--border-color);
+  line-height: 2em;
+}
+.cart-summary .cart-total table {
+  width: var(--percent100);
+}
+.cart-summary .cart-total table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-summary .grand-total td {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 2em;
+}
+.cart-summary .cart-total > a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 639px) {
+  #cart-table thead {
+    display: none;
+  }
+  #cart-table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+  }
+  #cart-table tbody tr td:first-child {
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    /* background-color: black; */
+  }
+  /*  */
+
+  #cart-table tbody tr td:not(:first-child) {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  #cart-table tbody tr td:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
