@@ -21,6 +21,7 @@ const Banner = () => {
   useEffect(() => {
     if (autoScroll) {
       const auto = () => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         slideInterval = setInterval(nextSlide, intervalTime);
       };
       auto();

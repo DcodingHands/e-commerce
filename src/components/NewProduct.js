@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import ProductCarousel from "../components/ProductCarousel";
 import Card from "./Card";
 import { data } from "../data/rawData";

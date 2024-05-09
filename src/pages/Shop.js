@@ -39,7 +39,7 @@ const Shop = () => {
       <section className=" py-4">
         <div className="container">
           <div className="row">
-            <div className="col-3 ">
+            <div className="col-md-12 col-lg-3">
               <div className="card mb-2 p-2">
                 <h5 className="card-title text-center fs-5">
                   shop by categories
@@ -61,6 +61,8 @@ const Shop = () => {
                     maxValue={250000}
                     onChange={handlePriceChange}
                   />
+                  {/* just show filtered price */}
+                  <p className="mt-3">{prices.minPrice}</p>
                 </div>
 
                 <div className="mt-3">
@@ -84,7 +86,7 @@ const Shop = () => {
                 <Colors />
               </div>
             </div>
-            <div className="col-9">
+            <div className="col-md-12 col-lg-9">
               <div className="filter-sort-grid ">
                 <div className="d-flex align-items-center justify-content-between">
                   <div className="d-flex align-items-center gap-10">
